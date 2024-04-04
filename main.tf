@@ -8,6 +8,6 @@ resource "azurerm_service_plan" "example" {
   resource_group_name = var.rgname
   location            = var.rglocation
   os_type             = var.kind
-  sku_name            = "B1"
+  sku_name            = var.sku
   depends_on [azurerm_resource_group.rg]
 }
