@@ -9,4 +9,5 @@ resource "azurerm_service_plan" "example" {
   location            = var.rglocation
   os_type             = var.kind
   sku_name            = "P1v2"
+  depends_on [azurerm_resource_group.rg]
 }
