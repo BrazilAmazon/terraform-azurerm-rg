@@ -1,3 +1,3 @@
-output "rgnames" {
- value = azurerm_resource_group.example.name
+output "appid" {
+ value = azurerm_service_plan.example.id
 }
