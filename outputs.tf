@@ -1,3 +1,3 @@
-#output "App_Service_Plan_id" {
- # value = azurerm_service_plan.example.id
-#}
+output "app_ids" {
+  value = { for k, v in zurerm_service_plan.example : k => v }
+}
